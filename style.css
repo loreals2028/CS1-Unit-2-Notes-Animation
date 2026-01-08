@@ -14,3 +14,20 @@
 #scale{
     transform:scale(0.5);
 }
+
+#skew{
+    transform: skew(-25deg);
+}
+
+/* trasnlate (x) moves element horizontally to the right (if x is positive)
+    translate (x,y) moves element diagonally 
+    translate (0,y) moves vertically
+*/
+
+#translate{
+    transform:translate(100px , 60px);
+}
+
+#chain {
+    transfrom: scale(1.2) rotate(45deg);
+}
