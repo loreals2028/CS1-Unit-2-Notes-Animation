@@ -22,7 +22,7 @@
     0%{ background:rgb(249, 159, 231); }
     50%{ 
         background: rgb(248, 241, 114); 
-        transform: skew(40deg) scale(0.2) rotate(360deg);
+        transform: skew(40deg) scale(0.2) rotate(3600deg);
         
     }
     100%{ background: rgb(255, 251, 182); }
