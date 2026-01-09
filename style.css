@@ -1,3 +1,34 @@
+/* STEP 1: Congigure an element to be animated */
+
+#animated-shape {
+    background: rgb(255, 255, 230);
+    width: 200px;
+    height: 200px;
+    /* sub-properties for the animation */
+    animation-name: colorchange-alt;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* STEP 2: Define the animation sequence */
+
+@keyframes colorchange{
+    from { background:rgb(255, 255, 230); }
+    to { background:rgb(248, 241, 114); }
+}
+
+@keyframes colorchange-alt{
+    0%{ background:rgb(249, 159, 231); }
+    50%{ 
+        background: rgb(248, 241, 114); 
+        transform: skew(40deg) scale(0.2) rotate(360deg);
+        
+    }
+    100%{ background: rgb(255, 251, 182); }
+}
+
+
 .box{
     background:rgb(255, 251, 182);
     margin: 20px;
