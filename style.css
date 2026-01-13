@@ -28,6 +28,39 @@
     100%{ background: rgb(255, 251, 182); }
 }
 
+/* STEP 1: Congigure an element to be animated
+    but using the shortcut "animation" property which 
+    sets the name, duration, iterations, timing function
+    ALL IN ONE LINE!
+*/
+
+#animate-emoji {
+    font-size: 50px;
+    animation: move-emoji 5s infinite ease-in-out;
+    display: inline-block;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+}
+
+/*  STEP 2: Define an animation sequence */
+@keyframes move-emoji{
+    0% {
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(180deg) scale(1.5);
+        opacity: 0;
+
+    }
+    
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
 
 .box{
     background:rgb(255, 251, 182);
